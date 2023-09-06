@@ -41,13 +41,15 @@ public class MySqlProductRepository implements ProductRepository {
             String query = String.format("select * from product where id = %d;", id);
             ResultSet resultSet = connection.createStatement().executeQuery(query);
 
-            resultSet.next();
-            String name = resultSet.getString(2);
-            double price = resultSet.getDouble(3);
-            return new CommonProduct(id, name, price);
+            if (resultSet.next()) {
+                String name = resultSet.getString(2);
+                double price = resultSet.getDouble(3);
+                return new CommonProduct(id, name, price);
+            }
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+        return null;
     }
 
     @Override

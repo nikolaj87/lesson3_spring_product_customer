@@ -20,7 +20,7 @@ public class AppConfig {
 
     @Bean
     public CustomerRepository customerRepository() {
-        return new CommonCustomerRepository();
+        return new MySqlCustomerRepository();
     }
 
     @Bean
