@@ -1,6 +1,6 @@
 package de.telran.lesson3.controller_layer;
 
-import de.telran.lesson3.domain_layer.entity.CommonCustomer;
+import de.telran.lesson3.domain_layer.entity.common.CommonCustomer;
 import de.telran.lesson3.domain_layer.entity.Customer;
 import de.telran.lesson3.service_layer.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,8 +1,8 @@
-package de.telran.lesson3.repository_layer;
+package de.telran.lesson3.repository_layer.mysql;
 
-import de.telran.lesson3.domain_layer.database.MySqlConnector;
-import de.telran.lesson3.domain_layer.entity.CommonProduct;
+import de.telran.lesson3.domain_layer.entity.common.CommonProduct;
 import de.telran.lesson3.domain_layer.entity.Product;
+import de.telran.lesson3.repository_layer.ProductRepository;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

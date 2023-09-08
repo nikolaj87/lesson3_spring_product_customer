@@ -1,8 +1,10 @@
-package de.telran.lesson3.service_layer;
+package de.telran.lesson3.service_layer.common;
 
 import de.telran.lesson3.domain_layer.entity.Cart;
 import de.telran.lesson3.domain_layer.entity.Customer;
 import de.telran.lesson3.repository_layer.CustomerRepository;
+import de.telran.lesson3.service_layer.CustomerService;
+import de.telran.lesson3.service_layer.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

@@ -1,8 +1,10 @@
-package de.telran.lesson3.repository_layer;
+package de.telran.lesson3.repository_layer.common;
 
 import de.telran.lesson3.domain_layer.database.DataBase;
 import de.telran.lesson3.domain_layer.entity.Customer;
 import de.telran.lesson3.domain_layer.entity.Product;
+import de.telran.lesson3.repository_layer.CustomerRepository;
+import de.telran.lesson3.repository_layer.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.sql.SQLException;

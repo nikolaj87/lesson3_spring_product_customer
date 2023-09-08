@@ -1,5 +1,6 @@
-package de.telran.lesson3.domain_layer.entity;
+package de.telran.lesson3.domain_layer.entity.common;
 
+import de.telran.lesson3.domain_layer.entity.Product;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

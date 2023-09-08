@@ -1,6 +1,9 @@
 package de.telran.lesson3.domain_layer.database;
 
 import de.telran.lesson3.domain_layer.entity.*;
+import de.telran.lesson3.domain_layer.entity.common.CommonCart;
+import de.telran.lesson3.domain_layer.entity.common.CommonCustomer;
+import de.telran.lesson3.domain_layer.entity.common.CommonProduct;
 
 import java.sql.SQLException;
 import java.util.ArrayList;

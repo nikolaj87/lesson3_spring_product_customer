@@ -1,6 +1,6 @@
 package de.telran.lesson3.controller_layer;
 
-import de.telran.lesson3.domain_layer.entity.CommonProduct;
+import de.telran.lesson3.domain_layer.entity.common.CommonProduct;
 import de.telran.lesson3.domain_layer.entity.Product;
 import de.telran.lesson3.service_layer.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
