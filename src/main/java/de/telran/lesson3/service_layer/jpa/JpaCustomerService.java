@@ -42,7 +42,7 @@ public class JpaCustomerService implements CustomerService {
 
     @Override
     public void add(Customer customer) {
-        //создаю пользователя и сразу создаю корзину. Надо добавить опцию Cascade.CREATE
+        //создаю пользователя и сразу создаю корзину. Когда добавил CascadeType.ALL корзина стала созхранятся тоже автоматически
         var jpaCustomer = new JpaCustomer(0, customer.getName(), null);
         var jpaCart = new JpaCart(0, jpaCustomer, new ArrayList<>());
         jpaCustomer.setCart(jpaCart);
