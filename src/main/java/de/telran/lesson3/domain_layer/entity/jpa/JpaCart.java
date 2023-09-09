@@ -3,10 +3,14 @@ package de.telran.lesson3.domain_layer.entity.jpa;
 import de.telran.lesson3.domain_layer.entity.Cart;
 import de.telran.lesson3.domain_layer.entity.Product;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 @Entity
 @Table(name = "cart")
 public class JpaCart implements Cart {
@@ -27,6 +31,15 @@ public class JpaCart implements Cart {
             inverseJoinColumns = @JoinColumn(name = "product_id")
     )
     private List<JpaProduct> products;
+
+    public JpaCart(int id, JpaCustomer customer, List<JpaProduct> products) {
+        this.id = id;
+        this.customer = customer;
+        this.products = products;
+    }
+
+    public JpaCart() {
+    }
 
     @Override
     public List<Product> getProducts() {

@@ -11,8 +11,8 @@ import java.util.List;
 
 public class SimpleDataBase implements DataBase {
 
-    private List<Customer> customers = new ArrayList<>();
-    private List<Product> products = new ArrayList<>();
+    private final List<Customer> customers = new ArrayList<>();
+    private final List<Product> products = new ArrayList<>();
     private int currentCustomerId;
     private int currentProductId;
 

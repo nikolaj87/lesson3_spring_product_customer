@@ -2,6 +2,7 @@ package de.telran.lesson3.controller_layer;
 
 import de.telran.lesson3.domain_layer.entity.common.CommonCustomer;
 import de.telran.lesson3.domain_layer.entity.Customer;
+import de.telran.lesson3.domain_layer.entity.jpa.JpaCustomer;
 import de.telran.lesson3.service_layer.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -26,7 +27,7 @@ public class CustomerController {
     }
 
     @PostMapping
-    public Customer add(@RequestBody CommonCustomer customer) {
+    public Customer add(@RequestBody JpaCustomer customer) {
         service.add(customer);
         return customer;
     }

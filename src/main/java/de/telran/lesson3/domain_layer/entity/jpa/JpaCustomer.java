@@ -3,7 +3,9 @@ package de.telran.lesson3.domain_layer.entity.jpa;
 import de.telran.lesson3.domain_layer.entity.Cart;
 import de.telran.lesson3.domain_layer.entity.Customer;
 import jakarta.persistence.*;
+import lombok.Setter;
 
+@Setter
 @Entity
 @Table(name = "customer")
 public class JpaCustomer implements Customer {
@@ -16,7 +18,7 @@ public class JpaCustomer implements Customer {
     @Column(name = "name")
     private String name;
 
-    @OneToOne(mappedBy = "customer")
+    @OneToOne(mappedBy = "customer", cascade = CascadeType.ALL)
     private JpaCart cart;
 
     public JpaCustomer() {

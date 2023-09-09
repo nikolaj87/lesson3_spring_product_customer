@@ -53,6 +53,6 @@ public class JpaProductService implements ProductService {
 
     @Override
     public double getAveragePrice() {
-        return 0;
+        return repository.getAveragePrice();
     }
 }

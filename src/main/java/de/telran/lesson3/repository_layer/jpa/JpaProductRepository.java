@@ -12,4 +12,7 @@ public interface JpaProductRepository extends JpaRepository<JpaProduct, Integer>
 
     @Query(value = "select sum(price) from product;", nativeQuery = true)
     double getTotalPrice();
+
+    @Query(value = "select avg(price) from product;", nativeQuery = true)
+    double getAveragePrice();
 }
